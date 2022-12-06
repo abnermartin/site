@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="uft-8">
+		<meta name="viewport" content="width = device-width">
+		<title>Contato - barbearia Alura</title>
+		<link rel="stylesheet" href="reset.css"> <!-- o reset precisa ser antes do nosso código pois ele vai resetar as fontes padrão do navegador. Se colocar depois ele reseta as fontes que nossos criamos-->
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+			<h1><img src="logo.png" alt="Logo Barbearia Alura"></h1> <!-- ALT é alternativa caso a imagem não aparece -->
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="produtos.html">Produtos</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+			</div>
+		</header>
+
+		<main class="main-contato">
+			<form>
+				<div> 
+					<label for="nomesobrenome">Nome e sobrenome</label>
+					<input type="text" id="nomesobrenome" .class="input-padrao" required placeholder="Seu nome completo">	<!-- o ID serve para identificar qual input o label tem que se referir -->
+
+					<label for="email">E-mail</label>
+					<input type="email" id="email" .class="input-padrao" required placeholder="seuemail@dominio.com.br">
+					<!-- "required" é pra marcar que esse input é importante e precisa ser preenchido-->
+
+					<label for="telefone">Telefone</label>
+					<input type="tel" id="telefone" .class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+					<label for="mensagem">Mensagem</label>	
+					<textarea cols="28" rows="7" id="mensagem" .class="input-padrao" required>
+					</textarea>
+				</div>
+
+				<div>
+					<p>Como prefere o nosso contato?</p>	
+					<label for="radio-email">
+						<input type="radio" name="contato" value="email" id="radio-email">
+						E-mail
+					</label>	
+					
+
+					<label for="radio-telefone">
+						<input type="radio" name="contato" value="telefone" id="radio-telefone" >
+						Telefone
+					</label>
+					
+
+					<label for="radio-whats">
+						<input type="radio" name="contato" value="WhatsApp" id="radio-whats" checked> 
+						<!-- "checked" serve para deixar essa opção já marcada -->
+						WhatsApp
+					</label>	
+				
+				</div>
+
+				<div>
+					<p>Qual horário você prefere ser atendido?</p>
+					<select >
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</div>
+
+					<label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por E-mail?</label>
+
+					<input type="submit" value="Enviar formul&#225;rio" class="enviar"> <!-- Submit é enviar os dados para algum servidor/e-mail/próxima pagina -->
+					<!-- formulário está escrito assim por causa de um incompatibilidade do navegador com o tipo de escrita. Um bug normal -->
+				
+			</form>
+
+			<table> <!-- criação de tabelas-->
+				<thead>
+				 	<tr> <!-- 1° linha-->
+						<th>Dia</th> <!-- célula-->
+						<th>Horário</th>
+					</tr>
+				</thead> 
+				<tbody>	
+					<tr> <!-- 2° linha-->
+						<td>Segunda</td>
+						<td>8hrs ~ 20hrs</td>
+					</tr>
+
+					<tr><!-- 3° linha-->
+						<td>Quarta-feira</td>
+						<td>8hrs ~ 20hrs</td>
+					</tr>
+
+					<tr><!-- 4° linha-->
+						<td>Sexta-feira</td>
+						<td>8hrs ~ 20hrs</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+
+		</body>
+	<footer>
+		<img src="logo-branco.png" alt="Logo Barbearia Alura">
+		<p class="copyright">
+			copyright Barbearia Alura (by Abner Martin)
+		</p>
+	</footer>
+</html>
